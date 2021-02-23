@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RENT BUDGET CALCULATOR</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body style="background-color: pink;">
+    <header id="main-header">
+      <div class="container">
+        <h1 >RENT BUDGET CALCULATOR</h1>
+      </div>
+    </header>
+    <section id="usermanual">
+      <div class="container">
+        <h4>
+          Expected Weekly Rent > $600 | Moving Date (Choosing from 1 to 13)
+        </h4>
+      </div>
+    </section>
+
+    <section id="Calculatortable">
+    <div style="align-items: center; display: flex; justify-content: center;">
+      <div>
+        <span class="card-title" style="align-self: center;">Click to Change</span>
+        <div class="row">
+            <div class="input-field col">
+              <input type="number" name="assumed_rent" id="assumed_rent" value="700" step=25>
+              <label for="assumed_rent">Expected Rent Per Week</label>
+            </div>
+        </div>
+        <div class="row">
+          <div class="input-field col">
+            <input type="number" name="movingdate" id="movingdate" value="1" step=1>
+            <label for="movingdate">Expected Moving Date in March</label>
+          </div>
+      </div>
+        <!--<input type="submit" value="Confirm Rent" class="btn" id="calcBtn">-->
+
+
+    <div class="row">
+      <input type="number" id="resultwk" disabled>
+      <label for="resultwk"">Weeks Covered</label>
+    </div>
+    <div class="row">
+      <input type="number" id="resultleftover" disabled>
+      <label for="assumed_rent">Fund Leftover</label>
+    </div>
+      </div>
+
+
+  </div>
+  </section>
+
+    <footer id="main-footer">
+      <p>Copyright &copy; 2021 My Rent Bdgt Calculator by ElsaD</p>
+    </footer>
+    <script src="app.js"></script>
+
+  </body>
+</html>
